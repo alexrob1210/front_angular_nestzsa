@@ -6,9 +6,11 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AppLayoutModule } from './layout/app.layout.module';
+import { CategoriaService } from './inventario/services/categoria.service';
 
 @NgModule({
   declarations: [PerfilComponent, ClienteComponent, LayoutComponent],
-  imports: [CommonModule, AdminRoutingModule,AppLayoutModule],
+  imports: [CommonModule, AdminRoutingModule, AppLayoutModule],
+  providers: [CategoriaService],
 })
 export class AdminModule {}
