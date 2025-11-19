@@ -3,7 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { BadgeModule } from "primeng/badge";
+import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
@@ -13,7 +17,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
-  ]
+    HttpClientModule,
+    BadgeModule,
+    TableModule,
+    DialogModule,
+    ButtonModule,
+    InputTextModule
+]
 })
 export class InventarioModule { }

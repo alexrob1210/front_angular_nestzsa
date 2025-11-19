@@ -13,10 +13,15 @@ interface Categoria {
   styleUrl: './categoria.component.scss'
 })
 export class CategoriaComponent implements OnInit {
+guardarCategoria() {
+throw new Error('Method not implemented.');
+}
 
   private categoriaService = inject(CategoriaService);
 
-  categorias: Categoria[] = [{ nombre: "prueba" }];
+  categorias: Categoria[] = [];
+  visible:boolean=false
+dialog_visible: any;
 
   ngOnInit(): void {
     this.getCategorias();
@@ -31,5 +36,12 @@ export class CategoriaComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+  mostrarDialog(){
+    this.visible=true
+
+  }
+  guadarCategoria(){
+    
   }
 }
