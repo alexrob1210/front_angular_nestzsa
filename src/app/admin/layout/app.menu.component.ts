@@ -34,12 +34,12 @@ export class AppMenuComponent implements OnInit {
           {
             label: 'Categoria',
             icon: 'pi pi-fw pi-id-card',
-            routerLink: ['/uikit/formlayout'],
+            routerLink: ['/admin/categoria'],
           },
           {
             label: 'Producto',
             icon: 'pi pi-fw pi-check-square',
-            routerLink: ['/uikit/input'],
+            routerLink: ['/admin/producto'],
           },
           {
             label: 'Pedido',
